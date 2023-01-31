@@ -1,0 +1,26 @@
+__py*
+*.pyc
+
+tests
+tests/*
+
+.ipynb*
+.pytest*
+
+env
+env/*
+
+snippets
+snippets/*
+
+tmp
+tmp/*
+
+*.md
+
+.git
+
+# *.csv
+# *.pk
+# *.ipynb
+
