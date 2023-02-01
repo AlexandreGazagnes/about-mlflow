@@ -74,9 +74,6 @@ docs/_build/
 # PyBuilder
 target/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
 # IPython
 profile_default/
 ipython_config.py
@@ -101,15 +98,6 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -128,6 +116,38 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# VSCODE
+.vscode/*
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Mlflow
+mlruns/
+mlartifacts/
+outputs/
+mlruns.db
+
+# Pytorch logs
+lightning_logs
+a.py
+
+# Log file created by pre-commit hook for black
+.black.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+
+####################################################################################################################
+####################################################################################################################
+
 
 # Personnal
 *.csv
@@ -136,4 +156,7 @@ dmypy.json
 *.pk
 
 
-.vscode/*
+data/
+env/
+mlruns/
+outputs/
