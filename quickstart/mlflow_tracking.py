@@ -1,3 +1,5 @@
+#! /home/alex/ENV/bin/python3
+
 import os
 from random import random, randint
 
