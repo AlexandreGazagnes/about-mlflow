@@ -1,24 +1,34 @@
 FROM python:3.9-bullseye 
 
-# date
+# Date
 RUN rm -f /etc/localtime  && ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
+
+# Update updgrade
 RUN apt update -y && apt upgrade -y
+
+# Install
 RUN apt install htop nano python3-pip python3-venv -y
+RUN python3 -m pip install --upgrade pip
 
 # Workdir
 WORKDIR /app
 
-# Copy
+# Requirements
 COPY ./requirements.txt /app/requirements.txt
 RUN python -m pip install -r requirements.txt
-
-# COPY ./make.sh /app/make.sh
+RUN python -m pip freeze >> requirements.freeze
 
 # Make
-# RUN chmod +x ./make.sh && ./make.sh
+# COPY ./make.sh /app/make.sh
+# RUN chmod +x ./make.sh 
+# RUN./make.sh
 
 # Copy the app 
 COPY . /app
 
+
 # CMD
+RUN which python
+RUN which python3
+RUN python -c "import pandas;"
 RUN echo "hello"

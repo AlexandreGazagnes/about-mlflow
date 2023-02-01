@@ -1,23 +1,23 @@
-Ipython
-
 mlflow
-
-pandas
+# pandas
 # numpy
+# scikit-learn
+xgboost
+lightgbm
+# shap
 
-matplotlib
+# matplotlib
 seaborn
 plotly
 
-scikit-learn
-# xgboost
-shap
-
+# web
 streamlit
-flask
+Flask
 requests
 
+# tools
+Ipython
 pytest
-
 flake8
 black
+pylint
